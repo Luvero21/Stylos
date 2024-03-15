@@ -9,36 +9,49 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/099c74ee23.js" crossorigin="anonymous"></script>
-</head>
 
 <body>
     <header class="header">
-        <div class="divWhite">
+        <div class="divWhite text-light">
 
-            <p class="comunicate"> Comunicate 261677777</p>
-
+            <p class="comunicate"><a class="aa" comunicate" href="https://api.whatsapp.com/send?phone=5492615964422"
+                    target="_blank">Comunicate
+                    📞
+                    261677777</a></p>
         </div>
-        <div class="logo-nav-container">
-            <a href="#" class="logo"><img src="./img/logo3.png" width="100px" alt="logo" class="img"> </a>
-
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="./secciones/nosotros.html">NOSOTROS</a></li>
-                    <li><a href="#">SERVICIOS</a></li>
-                    <li><a href="#">PROMOCIONES</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        <nav class="navegacion">
+            <div>
+                <img src='./img/logo.jpg' alt='logo' class="logo">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="bi bi-justify"></i>
+            </label>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#" class="active">INICIO</a>
+                </li>
+                <li>
+                    <a href="./secciones/nosotros.html">NOSOTROS </a> </li>
+                <li>
+                    <a href="./secciones/servicios.html">SERVICIOS </a> </li>
+                <li>
+                    <a href="./secciones/promociones.html">PROMOCIONES</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main class="main">
         <section class="banner">
             <div class="banner-contenedor">
-                <h4>
+                <h4 class="h4">
                     BIENVENIDO
                 </h4>
                 <p class="laPelu" data-aos="flip-right" data-aos-duration="2000">LA PELU</p>
@@ -76,11 +89,11 @@
             </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 w-100" id="servicioss">
+        <div class="row row-cols-1 row-cols-md-3 g-4 w-100 text-center" id="servicioss">
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 text-center  bg-dark ">
                     <img src="./img/girl-2189247_1920.jpg" class="card-img-top" alt="peluqueria" height="300px">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h5 class="card-title">PELUQUERIA</h5>
                         <p class="card-text">Podes encontrar los mejores coloristas y peluqueros!!! </p>
                     </div>
@@ -91,7 +104,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100  text-center  bg-dark ">
                     <img src="./img/estetica.jpg" class="card-img-top" alt="estetica" height="300px">
                     <div class="card-body">
                         <h5 class="card-title">ESTETICA</h5>
@@ -108,7 +121,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100  text-center  bg-dark ">
                     <img src="./img/tratamientos.jpg" class="card-img-top" alt="tratamientos" height="300px">
                     <div class="card-body">
                         <h5 class="card-title">TRATAMIENTOS</h5>
@@ -126,7 +139,6 @@
         <div>
             <h3 class="sucursales text-center">NUESTROS SALONES</h3>
 
-
         </div>
         <div>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -142,7 +154,7 @@
                     <div class="carousel-item active">
                         <img src="./img/hairdresser-489915_1280.jpg" height="600px" class="d-block w-100"
                             alt="salonComodoro">
-                        <div class="carousel-caption d-none d-md-block text-danger">
+                        <div class="carousel-caption d-none d-md-block text-light">
                             <h5>ESTETICA</h5>
                             <p>SUCURSAL COMODORO RIVADAVIA</p>
                         </div>
@@ -150,7 +162,7 @@
                     <div class="carousel-item">
                         <img src="./img/beauty-salon-3277314_1280.jpg" height="600px" class="d-block w-100"
                             alt="salonUshuaia">
-                        <div class="carousel-caption d-none d-md-block text-danger">
+                        <div class="carousel-caption d-none d-md-block text-light">
                             <h5>ESTETICA</h5>
                             <p>SUCURSAL USHUAIA</p>
                         </div>
@@ -158,7 +170,7 @@
                     <div class="carousel-item">
                         <img src="./img/salon-1923165_1280.jpg" height="600px" class="d-block w-100"
                             alt="salonPuertoMadryn">
-                        <div class="carousel-caption d-none d-md-block text-danger">
+                        <div class="carousel-caption d-none d-md-block text-secondary">
                             <h5>ESTETICA</h5>
                             <p>SUCURSAL PUERTO MADRYN</p>
                         </div>
@@ -177,6 +189,10 @@
             </div>
         </div>
         <br><br />
+        <div class=" text-center">
+            <p>HOY ES: <span id="fecha"></span></p>
+            <h4>Saca tu turno!</h4>
+        </div>
         <div class="formulario">
             <div class="contenedorFormulario">
                 <div class="container">
@@ -199,7 +215,7 @@
 
             </div>
             <div class="contenedorFormularioContinuacion">
-                <form id="enviar-mail" class="form">
+                <form id="enviar-mail" class="form text-secondary text-center">
                     <label for="email"></label>Email : </label>
                     <input class="email" id="email" type="email">
 
@@ -209,7 +225,7 @@
                     </div>
                     <div>
                         <label for="mensaje">Consulta :</label>
-                        <textarea id="mensaje" placeholder="Deja tu consulta...">
+                        <textarea class= "text-secondary" placeholder="Deja tu consulta">
                     </textarea>
                     </div>
 
@@ -237,45 +253,75 @@
 
     </main>
 
-    <footer>
-        <div class="container_footer">
-            <div class="box_footer">
-                <h2>VISITANOS</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.974116908871!2d-68.84659568481412!3d-32.92528208092755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bd878366ac1%3A0x5f462e2a510ead05!2sPlaza%20Godoy%20Cruz!5e0!3m2!1ses!2sar!4v1652925525119!5m2!1ses!2sar"
-                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>SANTA MARIA DE ORO 30</p>
-                <p>GODOY CRUZ</p>
-                <P>MENDOZA</P>
+    <footer class='container-fluid bg-secondary'>
+        
+       <!--<div class="footer-container">
+            <div class="redess">
+                 <a href="#" class='redess'><i class="fa-brands fa-facebook"></i>FACEBOOK</a>
+                <a href="#" class='redess'><i class="fa-brands fa-twitter-square"></i>TWITTER</a>
+                <a href="#" class='redess'><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
             </div>
-            <div class="box_footer">
-                <h2>REDES</h2>
-                <a href="#"><i class="fa-brands fa-facebook"></i>FACEBOOK</a>
-                <a href="#"><i class="fa-brands fa-twitter-square"></i>TWITTER</a>
-                <a href="#"><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
-                <a href="#"><i class="fa-brands fa-youtube"></i>YOUTUBE</a>
+            <div class="visitanos">
+                <p>Santa Maria de Oro 80, Godoy Cruz, MENDOZA</p>
+                <p>WhatsApp: <a href="https://wa.me/5492615964429" target="_blank">261-5964429</a></p>
             </div>
-            <div class="box_footer">
-                <h2>COMUNICATE</h2>
-                <br>
-                <i class="fa-brands fa-whatsapp"></i>
-                <br>
-                <p>2615964429</p>
+            </div>-->
+    
+        <div class=' text-light'>
+            <div class='row'>
+                <div class="col-md-4 text-center">
+                    <b class='visitanos'>VISITANOS</b>
+                    <p class='visitanos'>SANTA MARIA DE ORO 30</p>
+                    <p class='visitanos'>GODOY CRUZ</p>
+                    <P class='visitanos'>MENDOZA</P>
+                    <P class='visitanos'>ARGENTINA</P>
+                </div>
 
+                <div class="col-md-4 text-center">
+                    <b>REDES</b>
+                    <div>
+
+                        <div class='row'>
+                            <a href="#" class='redess'><i class="fa-brands fa-facebook"></i>FACEBOOK</a>
+                        </div>
+                        <div class='row'>
+                            <a href="#" class='redess'><i class="fa-brands fa-twitter-square"></i>TWITTER</a>
+                        </div>
+                        <div class='row'>
+                            <a href="#" class='redess'><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
+                        </div>
+                        <div>
+                            <a href="#" class='redess'><i class="fa-brands fa-youtube"></i>YOUTUBE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class='row'>
+                        <b>COMUNICATE</b>
+                    </div>
+                    <div class='row'>
+                        <a href="#" class='redess'><i class="fa-brands fa-whatsapp"></i>WHATSAPP</a>
+                    </div>
+                    <div class='row'>
+                        <p>2615964429</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box_registro">
-            <hr>
-            <p class="p">|@2022 LUCIANA REALES SANTANA|</p>
+        <div class="text-center text-light">
+            <p>&copy; <span id="year"></span> 💜 LUCIANA REALES SANTANA. TODOS LOS DERECHOS RESERVADOS.</p>
         </div>
     </footer>
 
-    <script src="/app.js"></script>
+
+    
+    <script src="fecha.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
