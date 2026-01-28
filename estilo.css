@@ -17,14 +17,15 @@ header {
   height: auto;
 }
 .navegacion {
-  height: 135px;
+  height: 140px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 .logo {
-  width: 120px;
+  width: 100px;
   height: auto;
   margin-left: 20px;
   margin-top: 15px;
@@ -121,6 +122,10 @@ h1 {
 }
 .comunicate:hover {
   color: hotpink;
+}
+.phone-icon {
+  color: #ff2e9f; /* rosa neón */
+  margin: 0 6px;
 }
 
 .banner {
@@ -662,7 +667,7 @@ main {
   }
   .nav-menu {
     position: relative;
-    height: 100px;
+    height: 110px;
     top: 0;
     background: none;
     transition: none;
