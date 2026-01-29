@@ -192,119 +192,119 @@
             </div>
         </div>
         <br><br />
-        <div class=" text-center">
-            <p>HOY ES: <span id="fecha"></span></p>
-            <h4>Saca tu turno!</h4>
-        </div>
-        <div class="formulario">
-            <div class="contenedorFormulario">
-                <div class="container">
-                    <svg viewBox="0 0 960 300">
-                        <symbol id="s-text">
-                            <text text-anchor="middle" x="50%" y="80%">
-                                Consultanos!
-                            </text>
-                        </symbol>
+        <div class="text-center mt-4">
+  <p>HOY ES: <span id="fecha"></span></p>
+  <h4>Saca tu turno!</h4>
+</div>
 
-                        <g class="g-ants">
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                        </g>
-                    </svg>
-                </div>
+<section class="formulario">
+  <div class="container">
 
+    <!-- TITULO -->
+    <div class="titulo-consulta">
+      <svg viewBox="0 0 1200 300" class="svg-titulo">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="60%">
+            Consultanos
+          </text>
+        </symbol>
+
+        <g class="g-ants">
+          <use href="#s-text" class="text-copy"></use>
+          <use href="#s-text" class="text-copy"></use>
+          <use href="#s-text" class="text-copy"></use>
+          <use href="#s-text" class="text-copy"></use>
+          <use href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </div>
+
+    <!-- FORM -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <form id="enviar-mail" class="form-card">
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" type="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input id="asunto" type="text" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Consulta</label>
+            <textarea id="mensaje" class="form-control" rows="4" placeholder="Deja tu consulta"></textarea>
+          </div>
+
+          <div id="spinner" class="text-center mb-3 d-none">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
             </div>
-            <div class="contenedorFormularioContinuacion">
-                <form id="enviar-mail" class="form text-secondary text-center">
-                    <label for="email"></label>Email : </label>
-                    <input class="email" id="email" type="email">
+          </div>
 
-                    <div>
-                        <label for="asunto">Asunto :</label>
-                        <input id="asunto" type="text">
-                    </div>
-                    <div>
-                        <label for="mensaje">Consulta :</label>
-                        <textarea class= "text-secondary" placeholder="Deja tu consulta">
-                    </textarea>
-                    </div>
+          <button id="enviar" type="submit" class="btn-enviar w-100">
+            Enviar mensaje
+          </button>
 
-                    <div id="spinner">
-                        <div class="sk-chase">
-                            <div class="sk-chase-dot"></div>
-                            <div class="sk-chase-dot"></div>
-                            <div class="sk-chase-dot"></div>
-                            <div class="sk-chase-dot"></div>
-                            <div class="sk-chase-dot"></div>
-                            <div class="sk-chase-dot"></div>
-                        </div>
-                    </div>
+        </form>
 
-                    <div>
-                        <button id="enviar" type="submit">Enviar
-                        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
-                </form>
-            </div>
+   <footer class="footer-pro">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- 📍 Dirección -->
+      <div class="col-md-4 text-center text-md-start">
+        <h5 class="footer-title">Visítanos</h5>
+        <p class="footer-text mb-1">Santa María de Oro 30</p>
+        <p class="footer-text mb-1">Godoy Cruz</p>
+        <p class="footer-text mb-1">Mendoza</p>
+        <p class="footer-text">Argentina</p>
+      </div>
+
+      <!-- 🌐 Redes -->
+      <div class="col-md-4 text-center">
+        <h5 class="footer-title">Redes</h5>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
         </div>
+      </div>
 
+      <!-- 📞 Contacto -->
+      <div class="col-md-4 text-center text-md-end">
+        <h5 class="footer-title">Comunicate</h5>
+        <a href="https://wa.me/542615964429" class="whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <p class="footer-text mt-2">+54 261 596 4429</p>
+      </div>
 
+    </div>
+  </div>
 
-    </main>
+  <div class="footer-bottom text-center">
+    © <span id="year"></span> 💜 Luciana Reales Santana — Todos los derechos reservados
+  </div>
+</footer>
 
-    <footer class='container-fluid bg-secondary'>
-        
-    
-        <div class=' text-light'>
-            <div class='row'>
-                <div class="col-md-4 text-center">
-                    <b class='visitanos'>VISITANOS</b>
-                    <p class='visitanos'>SANTA MARIA DE ORO 30</p>
-                    <p class='visitanos'>GODOY CRUZ</p>
-                    <P class='visitanos'>MENDOZA</P>
-                    <P class='visitanos'>ARGENTINA</P>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <b>REDES</b>
-                    <div>
-
-                        <div class='row'>
-                            <a href="#" class='redess'><i class="fa-brands fa-facebook"></i>FACEBOOK</a>
-                        </div>
-                        <div class='row'>
-                            <a href="#" class='redess'><i class="fa-brands fa-twitter-square"></i>TWITTER</a>
-                        </div>
-                        <div class='row'>
-                            <a href="#" class='redess'><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
-                        </div>
-                        <div>
-                            <a href="#" class='redess'><i class="fa-brands fa-youtube"></i>YOUTUBE</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <div class='row'>
-                        <b>COMUNICATE</b>
-                    </div>
-                    <div class='row'>
-                        <a href="#" class='redess'><i class="fa-brands fa-whatsapp"></i>WHATSAPP</a>
-                    </div>
-                    <div class='row'>
-                        <p>2615964429</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center text-light">
-            <p>&copy; <span id="year"></span> 💜 LUCIANA REALES SANTANA. TODOS LOS DERECHOS RESERVADOS.</p>
-        </div>
-    </footer>
  
     <script src="fecha.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
